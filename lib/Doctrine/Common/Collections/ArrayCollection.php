@@ -91,10 +91,13 @@ class ArrayCollection implements Collection, Selectable
      *
      * @return static
      *
-     * @psalm-param array<TKey,T> $elements
-     * @psalm-return static<TKey,T>
+     * @template TNewKey of array-key
+     * @template TNew
+     *
+     * @psalm-param array<TNewKey,TNew> $elements
+     * @psalm-return static<TNewKey,TNew>
      */
-    protected function createFrom(array $elements)
+    protected static function createFrom(array $elements)
     {
         return new static($elements);
     }
@@ -197,6 +200,9 @@ class ArrayCollection implements Collection, Selectable
      *
      * @param int|string|null $offset
      * @param mixed           $value
+     * 
+     * @psalm-param TKey $offset
+     * @psalm-param T $value
      */
     public function offsetSet($offset, $value) : void
     {
@@ -347,7 +353,7 @@ class ArrayCollection implements Collection, Selectable
      */
     public function map(Closure $func) : Collection
     {
-        return $this->createFrom(array_map($func, $this->elements));
+        return self::createFrom(array_map($func, $this->elements));
     }
 
     /**
@@ -359,7 +365,7 @@ class ArrayCollection implements Collection, Selectable
      */
     public function filter(Closure $p) : Collection
     {
-        return $this->createFrom(array_filter($this->elements, $p, ARRAY_FILTER_USE_BOTH));
+        return self::createFrom(array_filter($this->elements, $p, ARRAY_FILTER_USE_BOTH));
     }
 
     /**
@@ -391,7 +397,7 @@ class ArrayCollection implements Collection, Selectable
             }
         }
 
-        return [$this->createFrom($matches), $this->createFrom($noMatches)];
+        return [self::createFrom($matches), self::createFrom($noMatches)];
     }
 
     /**
@@ -452,6 +458,6 @@ class ArrayCollection implements Collection, Selectable
             $filtered = array_slice($filtered, (int) $offset, $length, true);
         }
 
-        return $this->createFrom($filtered);
+        return self::createFrom($filtered);
     }
 }
