@@ -42,6 +42,7 @@ use function uasort;
  * @template-implements Collection<TKey,T>
  * @template-implements Selectable<TKey,T>
  * @psalm-consistent-constructor
+ * @psalm-consistent-templates
  */
 class ArrayCollection implements Collection, Selectable
 {
