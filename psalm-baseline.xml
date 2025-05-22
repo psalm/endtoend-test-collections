@@ -1,9 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="dev-master@a3a13241a76d19e7e7f0f51bef973f8c9266d594">
+<files psalm-version="6.x-dev@4696e07d52a656123262c12f435aa0f6bc8690d3">
+  <file src="lib/Doctrine/Common/Collections/AbstractLazyCollection.php">
+    <MissingOverrideAttribute>
+      <code><![CDATA[public function add($element) : bool]]></code>
+      <code><![CDATA[public function clear() : void]]></code>
+      <code><![CDATA[public function contains($element) : bool]]></code>
+      <code><![CDATA[public function containsKey($key) : bool]]></code>
+      <code><![CDATA[public function count() : int]]></code>
+      <code><![CDATA[public function current()]]></code>
+      <code><![CDATA[public function exists(Closure $p) : bool]]></code>
+      <code><![CDATA[public function filter(Closure $p) : Collection]]></code>
+      <code><![CDATA[public function first()]]></code>
+      <code><![CDATA[public function forAll(Closure $p) : bool]]></code>
+      <code><![CDATA[public function get($key)]]></code>
+      <code><![CDATA[public function getIterator() : Traversable]]></code>
+      <code><![CDATA[public function getKeys() : array]]></code>
+      <code><![CDATA[public function getValues() : array]]></code>
+      <code><![CDATA[public function indexOf($element)]]></code>
+      <code><![CDATA[public function isEmpty() : bool]]></code>
+      <code><![CDATA[public function key()]]></code>
+      <code><![CDATA[public function last()]]></code>
+      <code><![CDATA[public function map(Closure $func) : Collection]]></code>
+      <code><![CDATA[public function next()]]></code>
+      <code><![CDATA[public function offsetExists($offset) : bool]]></code>
+      <code><![CDATA[public function offsetGet($offset)]]></code>
+      <code><![CDATA[public function offsetSet($offset, $value) : void]]></code>
+      <code><![CDATA[public function offsetUnset($offset) : void]]></code>
+      <code><![CDATA[public function partition(Closure $p) : array]]></code>
+      <code><![CDATA[public function remove($key)]]></code>
+      <code><![CDATA[public function removeElement($element) : bool]]></code>
+      <code><![CDATA[public function set($key, $value) : void]]></code>
+      <code><![CDATA[public function slice(int $offset, ?int $length = null) : array]]></code>
+      <code><![CDATA[public function toArray() : array]]></code>
+    </MissingOverrideAttribute>
+  </file>
   <file src="lib/Doctrine/Common/Collections/ArrayCollection.php">
+    <ClassMustBeFinal>
+      <code><![CDATA[ArrayCollection]]></code>
+    </ClassMustBeFinal>
+    <MissingOverrideAttribute>
+      <code><![CDATA[public function add($element) : bool]]></code>
+      <code><![CDATA[public function clear() : void]]></code>
+      <code><![CDATA[public function contains($element) : bool]]></code>
+      <code><![CDATA[public function containsKey($key) : bool]]></code>
+      <code><![CDATA[public function count() : int]]></code>
+      <code><![CDATA[public function current()]]></code>
+      <code><![CDATA[public function exists(Closure $p) : bool]]></code>
+      <code><![CDATA[public function filter(Closure $p) : Collection]]></code>
+      <code><![CDATA[public function first()]]></code>
+      <code><![CDATA[public function forAll(Closure $p) : bool]]></code>
+      <code><![CDATA[public function get($key)]]></code>
+      <code><![CDATA[public function getIterator() : Traversable]]></code>
+      <code><![CDATA[public function getKeys() : array]]></code>
+      <code><![CDATA[public function getValues() : array]]></code>
+      <code><![CDATA[public function indexOf($element)]]></code>
+      <code><![CDATA[public function isEmpty() : bool]]></code>
+      <code><![CDATA[public function key()]]></code>
+      <code><![CDATA[public function last()]]></code>
+      <code><![CDATA[public function map(Closure $func) : Collection]]></code>
+      <code><![CDATA[public function matching(Criteria $criteria) : Collection]]></code>
+      <code><![CDATA[public function next()]]></code>
+      <code><![CDATA[public function offsetExists($offset) : bool]]></code>
+      <code><![CDATA[public function offsetGet($offset)]]></code>
+      <code><![CDATA[public function offsetSet($offset, $value) : void]]></code>
+      <code><![CDATA[public function offsetUnset($offset) : void]]></code>
+      <code><![CDATA[public function partition(Closure $p) : array]]></code>
+      <code><![CDATA[public function remove($key)]]></code>
+      <code><![CDATA[public function removeElement($element) : bool]]></code>
+      <code><![CDATA[public function set($key, $value) : void]]></code>
+      <code><![CDATA[public function slice(int $offset, ?int $length = null) : array]]></code>
+      <code><![CDATA[public function toArray() : array]]></code>
+    </MissingOverrideAttribute>
     <RiskyTruthyFalsyComparison>
-      <code>$length</code>
-      <code>$offset</code>
+      <code><![CDATA[$length]]></code>
+      <code><![CDATA[$offset]]></code>
     </RiskyTruthyFalsyComparison>
+  </file>
+  <file src="lib/Doctrine/Common/Collections/Criteria.php">
+    <ClassMustBeFinal>
+      <code><![CDATA[Criteria]]></code>
+    </ClassMustBeFinal>
+  </file>
+  <file src="lib/Doctrine/Common/Collections/ExpressionBuilder.php">
+    <ClassMustBeFinal>
+      <code><![CDATA[ExpressionBuilder]]></code>
+    </ClassMustBeFinal>
   </file>
 </files>
