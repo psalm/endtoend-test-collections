@@ -110,6 +110,9 @@
       <code><![CDATA[slice]]></code>
       <code><![CDATA[toArray]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Collection]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
   <file src="lib/Doctrine/Common/Collections/Criteria.php">
     <ClassMustBeFinal>
@@ -132,5 +135,8 @@
     <MissingAbstractPureAnnotation>
       <code><![CDATA[matching]]></code>
     </MissingAbstractPureAnnotation>
+    <MissingInterfaceImmutableAnnotation>
+      <code><![CDATA[Selectable]]></code>
+    </MissingInterfaceImmutableAnnotation>
   </file>
 </files>
