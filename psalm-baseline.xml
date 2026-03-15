@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="dev-master@cf404b51daf81d79198a029f7b2c7f64d28ae68e">
+<files psalm-version="6.x-dev@551172c8c319f42604493bc2dadf9883182221ba">
   <file src="lib/Doctrine/Common/Collections/AbstractLazyCollection.php">
-    <MissingAbstractPureAnnotation>
-      <code><![CDATA[doInitialize]]></code>
-    </MissingAbstractPureAnnotation>
     <MissingOverrideAttribute>
       <code><![CDATA[public function add($element) : bool]]></code>
       <code><![CDATA[public function clear() : void]]></code>
@@ -74,69 +71,19 @@
       <code><![CDATA[public function slice(int $offset, ?int $length = null) : array]]></code>
       <code><![CDATA[public function toArray() : array]]></code>
     </MissingOverrideAttribute>
-    <MissingPureAnnotation>
-      <code><![CDATA[__construct]]></code>
-      <code><![CDATA[__toString]]></code>
-    </MissingPureAnnotation>
     <RiskyTruthyFalsyComparison>
       <code><![CDATA[$length]]></code>
       <code><![CDATA[$offset]]></code>
     </RiskyTruthyFalsyComparison>
   </file>
-  <file src="lib/Doctrine/Common/Collections/Collection.php">
-    <MissingAbstractPureAnnotation>
-      <code><![CDATA[add]]></code>
-      <code><![CDATA[clear]]></code>
-      <code><![CDATA[contains]]></code>
-      <code><![CDATA[containsKey]]></code>
-      <code><![CDATA[current]]></code>
-      <code><![CDATA[exists]]></code>
-      <code><![CDATA[filter]]></code>
-      <code><![CDATA[first]]></code>
-      <code><![CDATA[forAll]]></code>
-      <code><![CDATA[get]]></code>
-      <code><![CDATA[getKeys]]></code>
-      <code><![CDATA[getValues]]></code>
-      <code><![CDATA[indexOf]]></code>
-      <code><![CDATA[isEmpty]]></code>
-      <code><![CDATA[key]]></code>
-      <code><![CDATA[last]]></code>
-      <code><![CDATA[map]]></code>
-      <code><![CDATA[next]]></code>
-      <code><![CDATA[partition]]></code>
-      <code><![CDATA[remove]]></code>
-      <code><![CDATA[removeElement]]></code>
-      <code><![CDATA[set]]></code>
-      <code><![CDATA[slice]]></code>
-      <code><![CDATA[toArray]]></code>
-    </MissingAbstractPureAnnotation>
-    <MissingInterfaceImmutableAnnotation>
-      <code><![CDATA[Collection]]></code>
-    </MissingInterfaceImmutableAnnotation>
-  </file>
   <file src="lib/Doctrine/Common/Collections/Criteria.php">
     <ClassMustBeFinal>
       <code><![CDATA[Criteria]]></code>
     </ClassMustBeFinal>
-    <MissingPureAnnotation>
-      <code><![CDATA[expr]]></code>
-      <code><![CDATA[orderBy]]></code>
-      <code><![CDATA[setFirstResult]]></code>
-      <code><![CDATA[setMaxResults]]></code>
-      <code><![CDATA[where]]></code>
-    </MissingPureAnnotation>
   </file>
   <file src="lib/Doctrine/Common/Collections/ExpressionBuilder.php">
     <ClassMustBeFinal>
       <code><![CDATA[ExpressionBuilder]]></code>
     </ClassMustBeFinal>
-  </file>
-  <file src="lib/Doctrine/Common/Collections/Selectable.php">
-    <MissingAbstractPureAnnotation>
-      <code><![CDATA[matching]]></code>
-    </MissingAbstractPureAnnotation>
-    <MissingInterfaceImmutableAnnotation>
-      <code><![CDATA[Selectable]]></code>
-    </MissingInterfaceImmutableAnnotation>
   </file>
 </files>
