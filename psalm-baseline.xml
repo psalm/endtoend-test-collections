@@ -77,6 +77,25 @@
     <MissingPureAnnotation>
       <code><![CDATA[__construct]]></code>
       <code><![CDATA[__toString]]></code>
+      <code><![CDATA[add]]></code>
+      <code><![CDATA[clear]]></code>
+      <code><![CDATA[contains]]></code>
+      <code><![CDATA[containsKey]]></code>
+      <code><![CDATA[count]]></code>
+      <code><![CDATA[current]]></code>
+      <code><![CDATA[first]]></code>
+      <code><![CDATA[get]]></code>
+      <code><![CDATA[getKeys]]></code>
+      <code><![CDATA[getValues]]></code>
+      <code><![CDATA[indexOf]]></code>
+      <code><![CDATA[isEmpty]]></code>
+      <code><![CDATA[key]]></code>
+      <code><![CDATA[last]]></code>
+      <code><![CDATA[next]]></code>
+      <code><![CDATA[remove]]></code>
+      <code><![CDATA[removeElement]]></code>
+      <code><![CDATA[set]]></code>
+      <code><![CDATA[slice]]></code>
     </MissingPureAnnotation>
     <RiskyTruthyFalsyComparison>
       <code><![CDATA[$length]]></code>
